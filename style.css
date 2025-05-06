@@ -3,3 +3,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+nav {
+    background-color: aqua;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburguer {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    justify-content: space-between;
+}
+
+.hamburguer span{
+    height: 4px;
+    background-color: aliceblue;
+    border-radius: 2px;
+}
+
+ul.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul.menu li a {
+color: aliceblue;
+text-decoration: none;
+}
