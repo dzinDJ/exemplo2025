@@ -10,7 +10,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: #333;
-    color: white;
+    color: rgba(221, 15, 15, 0.582);
     padding: 10px 20px;
 
 }
@@ -50,7 +50,7 @@ nav {
 }
 
 nav a {
-color: white;
+color:rgba(224, 22, 22, 0.623);
 padding: 15px 20px;
 text-decoration: none;
 border-bottom: 1px solid #555;
