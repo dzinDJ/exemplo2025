@@ -1,41 +1,87 @@
-*{
+body{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: arial,sans-serif;
+
 }
 
-nav {
-    background-color: aqua;
-    padding: 10px 20px;
-    position: relative;
-}
 
-.menu-toggle {
-    display: none;
-}
-
-.hamburguer {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    width: 30px;
-    height: 25px;
+header {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+
 }
 
-.hamburguer span{
-    height: 4px;
-    background-color: aliceblue;
+
+.logo{
+    font-size: 1.5rem;
+
+}
+
+
+#menu-toggle {
+    display: none;
+
+}
+
+.menu-icon{
+    display: flex;
+    flex-direction:column;
+    width: 30px;
+    cursor:pointer
+
+}
+
+.menu-icon span{
+    height: 3px;
+    background: white;
+    margin: 4px 0;
     border-radius: 2px;
 }
 
-ul.menu {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+nav {
+    background-color: #444;
+    display: none;
+    flex-direction: column;
+
 }
 
-ul.menu li a {
-color: aliceblue;
+nav a {
+color: white;
+padding: 15px 20px;
 text-decoration: none;
+border-bottom: 1px solid #555;
+
 }
+
+nav a:houver{
+    background-color: #555;
+
+}
+
+#menu-toggle:checked+label+nav{
+    display: flex;
+
+}
+
+@media (min-width:768px){
+    .menu-icon{
+        display: none;
+    }
+}
+
+nav{
+    display: flex!important;
+    flex-direction: row;
+    background: none;
+
+}
+
+nav a{
+    border: none;
+
+}
+
