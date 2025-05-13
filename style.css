@@ -37,7 +37,7 @@ header {
 
 .menu-icon span{
     height: 3px;
-    background: white;
+    background: rgba(224, 22, 22, 0.623);
     margin: 4px 0;
     border-radius: 2px;
 }
